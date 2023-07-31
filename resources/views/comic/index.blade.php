@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-center my-3">
-                <a href="#" class="btn btn-primary">Aggiungi il tuo fumetto</a>
+                <a href="{{ route('comic.create') }}" class="btn btn-primary">Add your comics</a>
             </div>
         </div>
         <div class="row">

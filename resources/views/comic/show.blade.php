@@ -4,6 +4,12 @@
     <div class="container">
         <div class="row mt-4">
             <div class="col">
+                <a href="{{ route('comic.index')}}" class="btn btn-primary">Return to comics list</a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
                 @if(!empty($comic->thumb && $comic->cover_image && $comic->thumb2))
                 <img src="{{ $comic->thumb }}" class="img-fluid">
                 @else
