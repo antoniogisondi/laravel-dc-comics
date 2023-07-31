@@ -53,6 +53,7 @@ class ComicController extends Controller
         // $comic->artists = $form_data['artists'];
         // $comic->writers = $form_data['writers'];
 
+        // CON FILLABLE
         $comic->fill($form_data);
 
         $comic->save();
