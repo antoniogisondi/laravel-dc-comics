@@ -3,13 +3,11 @@
 @section('content')
     <div class="container">
         <div class="row">
-            @foreach ($comics as $comic)
-            <div class="col-12">
-                <div class="card">
-                    <img src="{{ $comic->thumb}}" alt="">
-                </div>
-            </div> 
-            @endforeach
+            <div class="col">
+                <a href="{{ route('comic.index') }}">
+                    <button class="btn btn-primary">Push to start</button>
+                </a>
+            </div>
         </div>
     </div>
 @endsection
