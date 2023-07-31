@@ -10,7 +10,7 @@
 
         <div class="row mt-4">
             <div class="col">
-                @if(!empty($comic->thumb && $comic->cover_image && $comic->thumb2))
+                @if(!empty($comic->thumb || $comic->cover_image || $comic->thumb2))
                 <img src="{{ $comic->thumb }}" class="img-fluid">
                 @else
                     <h5>Immagine non disponibile</h5>
