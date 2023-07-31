@@ -6,7 +6,7 @@
             <div class="col">
                 <h3>Inserisci i dati del tuo fumetto</h3>
                 <div>
-                    <form action="" method="POST">
+                    <form action="{{ route('comic.store') }}" method="POST">
                         @csrf
                         <div class="form-group mb-3">
                             <label class="form-label">Titolo</label>
@@ -46,6 +46,7 @@
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-success">Salva</button>
+                            <button type="reset" class="btn btn-success">Reset</button>
                         </div>
                     </form>
                 </div>
