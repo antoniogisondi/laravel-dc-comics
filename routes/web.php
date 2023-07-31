@@ -15,7 +15,6 @@ use App\Http\Controllers\ComicController as ComicController;
 */
 
 Route::get('/', function () {
-    
     return view('home');
 });
 
