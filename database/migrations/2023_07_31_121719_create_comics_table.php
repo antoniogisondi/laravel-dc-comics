@@ -25,7 +25,7 @@ return new class extends Migration
             $table->date('sale_date');
             $table->string('type', 50);
             $table->text('artists');
-            $tabel->text('writers');
+            $table->text('writers');
             $table->timestamps();
         });
     }
