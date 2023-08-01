@@ -16,7 +16,7 @@
                             <div class="link d-flex flex-row">
                                 <a href="{{ route('comic.show', $item) }}" class="btn btn-info"><i class="fas fa-eye"></i></a>
                                 <a href="{{ route('comic.edit', $item->id) }}" class="btn btn-warning"><i class="fas fa-edit"></i></a>
-                                <form action="{{ route('comic.destroy', $item->id)}}" method="POST">
+                                <form action="{{ route('comic.destroy', $item->id)}}" method="POST" onsubmit="return confirm('Sei sicuro di eliminare questo elemento?')">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
