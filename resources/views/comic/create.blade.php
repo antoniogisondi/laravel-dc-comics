@@ -21,7 +21,7 @@
                             <input type="text" class="form-control" id="cover_image" name="cover_image" placeholder="Inserisci l'immagine del fumetto">
                         </div>
                         <div class="form-group mb-3">
-                            <label class="form-label">Immagine</label>
+                            <label class="form-label">Immagine 2</label>
                             <input type="text" class="form-control" id="thumb2" name="thumb2" placeholder="Inserisci l'immagine del fumetto">
                         </div>
                         <div class="form-group mb-3">
