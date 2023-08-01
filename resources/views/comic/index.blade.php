@@ -16,6 +16,11 @@
                             <div class="link d-flex flex-row">
                                 <a href="{{ route('comic.show', $item) }}" class="btn btn-info"><i class="fas fa-eye"></i></a>
                                 <a href="{{ route('comic.edit', $item->id) }}" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                                <form action="{{ route('comic.destroy', $item->id)}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                </form>
                             </div>
                         </div>
                         <div class="card-body d-flex justify-content-center">
