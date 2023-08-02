@@ -74,6 +74,15 @@
                 </div>
             </div>
 
+            <div class="col p-5 d-flex justify-content-center">
+                <a href="{{ route('comic.edit', $comic->id)}}" class="btn btn-info">MODIFICA IL FUMETTO</a>
+                <form action="{{ route('comic.destroy', $comic->id)}}" method="POST" onsubmit="return confirm('Sei sicuro di voler eliminare questo elemento?')">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">ELIMINA IL FUMETTO</i></button>
+                </form>
+            </div>
+
             <div class="col bg-grey d-flex justify-content-center">
                 <ul class="nav d-flex flex-row p-2">
                     <li class="nav-item d-flex flex-row align-items-center m-4">
